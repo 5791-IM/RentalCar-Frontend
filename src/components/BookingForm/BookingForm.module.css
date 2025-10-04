@@ -1,0 +1,95 @@
+.section {
+  box-sizing: border-box;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  padding: 32px;
+  width: 640px;
+  /* height: 488px; */
+  background-color: var(--white);
+}
+
+.container {
+  margin-bottom: 24px;
+
+  /* width: 576px;
+  height: 52px; */
+}
+
+.title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--gray);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px 20px;
+  border: none;
+  background-color: var(--inputs);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--gray);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field:focus {
+  border-color: var(--gray-light);
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+.textarea {
+  min-height: 88px;
+  resize: vertical;
+  border-radius: 12px;
+  padding: 12px 20px 56px;
+}
+
+.btn {
+  margin: 24px auto 0;
+  padding: 12px 51px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--button);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  width: 156px;
+  height: 44px;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}

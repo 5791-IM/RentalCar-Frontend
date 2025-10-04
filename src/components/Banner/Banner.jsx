@@ -1,0 +1,23 @@
+import css from "./Banner.module.css";
+
+const Banner = () => {
+  return (
+    <section className={css.banner}>
+      <img
+        src="/public/banner.jpg"
+        alt="Car rental banner"
+        className={css.bannerImg}
+      />
+      <div className={css.overlay}></div>
+      <div className={css.container}>
+        <h1 className={css.title}>Find your perfect rental car</h1>
+        <p className={css.text}>
+          Reliable and budget-friendly rentals for any journey
+        </p>
+        <button className={css.btn}>View Catalog</button>
+      </div>
+    </section>
+  );
+};
+
+export default Banner;
