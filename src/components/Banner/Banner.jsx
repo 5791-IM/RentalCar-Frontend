@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import css from "./Banner.module.css";
 
 const Banner = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/catalog");
+  };
+
   return (
     <section className={css.banner}>
       <img
@@ -14,7 +21,9 @@ const Banner = () => {
         <p className={css.text}>
           Reliable and budget-friendly rentals for any journey
         </p>
-        <button className={css.btn}>View Catalog</button>
+        <button className={css.btn} onClick={handleClick}>
+          View Catalog
+        </button>
       </div>
     </section>
   );

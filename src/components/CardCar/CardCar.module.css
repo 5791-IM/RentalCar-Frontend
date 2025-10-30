@@ -18,8 +18,8 @@
 }
 
 .img {
-  width: 100%;
-  height: 180px; /* временный размер картинки */
+  width: 276px;
+  height: 268px; /* временный размер картинки */
   background: #e0e0e0; /* серый фон-заглушка */
   border-radius: 8px;
 }

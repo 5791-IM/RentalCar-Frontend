@@ -9,9 +9,17 @@ export const CardCar = ({
   company,
   type,
   mileage,
+  img,
 }) => {
   return (
     <article className={css.card}>
+      <div className={css.imageWrapper}>
+        <img
+          src={img || "/default-car.jpg"}
+          alt={`${brand} ${model}`}
+          className={css.image}
+        />
+      </div>
       <div className={css.content}>
         <div className={css.img}></div>
         <div className={css.title}>

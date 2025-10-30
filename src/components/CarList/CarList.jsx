@@ -50,7 +50,7 @@ export const CarList = () => {
   return (
     <ul className={css.list}>
       {cars.map((car) => (
-        <li key={car.id}>
+        <li key={car.id} className={css.item}>
           <CardCar
             brand={car.make}
             model={car.model}
@@ -60,6 +60,7 @@ export const CarList = () => {
             company={car.rentalCompany}
             type={car.type}
             mileage={car.mileage}
+            img={car.img}
           />
         </li>
       ))}

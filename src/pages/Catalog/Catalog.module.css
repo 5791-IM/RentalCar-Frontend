@@ -1,0 +1,25 @@
+.catalogPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loadMore {
+  margin-top: 40px;
+  background-color: #3470ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loadMore:hover {
+  background-color: #0b44cd;
+}
